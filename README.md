@@ -6,7 +6,7 @@ A machine learning model that predicts English Premier League match outcomes usi
 Beats random guessing by 13%
 Comparable to casual betting tipsters
 
-🔧 How It Works
+How It Works
 The model uses 4 key features:
 
 Team Form: Rolling 5-game win streaks for home/away teams
@@ -14,7 +14,7 @@ Goal Averages: Historical scoring patterns
 Time Weighting: Recent games matter more (95% decay rate)
 Walk-Forward Validation: No future data leakage
 
-📊 Features
+Features
 
 Individual match predictions with confidence scores
 Gameweek-by-gameweek analysis
@@ -22,7 +22,7 @@ Breakdown by result type (Home Win/Draw/Away Win)
 Shows most confident correct/incorrect predictions
 Visual indicators (✅❌) for each prediction
 
-🚀 Quick Start
+Quick Start
 
 Install requirements:
 
@@ -38,8 +38,8 @@ E1.csv - Premier League match data (2022-23 season)
 E0.csv - Additional season data
 README.md - This file
 
-📈 Sample Output
-🏆 GAMEWEEK 15
+Sample Output
+GAMEWEEK 15
 --------------------------------------------------
 ✅ Arsenal vs Chelsea
     Score: 2-1 | Actual: Home Win
@@ -55,11 +55,3 @@ Classes: Home Win (0), Draw (1), Away Win (2)
 Training: Time-weighted samples with exponential decay
 Validation: Chronological train/test splits by gameweek
 Features: 4 engineered features per match
-
-🔮 Future Improvements
-
-Add head-to-head historical records
-Include player injury/suspension data
-Implement ELO rating system
-Add weather and referee factors
-Ensemble with other algorithms
